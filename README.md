@@ -1,11 +1,9 @@
 ### Tests for ft_containers
 ###### _By Sam Kortekaas (skorteka)_
 
-###### _Powered by Catch2_
+#### Project structure:
 
-
-##### Project structure:
-
+Place the test directory in the root of your project.
 In Makefile, include the directories that contain the includes you need for you containers to work. 
 
 For the example file structure below you have to change INCLUDE in the ft_containers_tests Makefile to:
@@ -27,8 +25,9 @@ _INCLUDE = -I../List -I../Vector -I../Vector/Whatever_
     │
     └── ft_containers_tests/
 
-##### Usage:
-- cd to ft_containers/ft_containers_tests/
+#### Usage:
+
+cd to ft_containers/ft_containers_tests/
 
 Normal test run:
 - make && ./ft_containers_tests
@@ -44,6 +43,6 @@ You can also run a specific test by adding the name of the test as an argument:
 To stop testing on the first error / n errors:
 - make && ./ft_containers_tests -a / -x n
 
-For a more compact output run with -r compact. To get insights in memory problems 
-please compile with "make asan=1"
+For a more compact output run with _"-r compact"_. To get insights in memory problems 
+please compile with _"make asan=1"_.
 
